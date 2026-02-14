@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Le mie recensioni dei libri che leggo. Scopri i miei consigli di lettura, le valutazioni e le opinioni.">
+  <meta property="og:title" content="Pagine d'Ambra">
+  <meta property="og:description" content="Blog di recensioni libri — scopri le mie letture preferite.">
+  <meta property="og:type" content="website">
+  <title>Pagine d'Ambra — Recensioni Libri</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Favicon (emoji fallback) -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="img/Logo_blog.jpg" alt="Logo" class="logo-img">
+        <span class="logo-icon">🍂</span>
+        <span>Pagine d'Ambra</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#libri">Libri</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="nav-overlay"></div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Pagine <span class="highlight">d'Ambra</span></h1>
+      <p class="hero-subtitle">
+        Sono una lettrice di 28 anni e no non mi chiamo Ambra, la scelta del nome è data perché descrive un’atmosfera
+        cromatica, richiama i colori dell’autunno, al caffè tutte cose che io amo follemente. Questo blog nasce dal mio
+        bisogno di evasione. Tra una tazza di caffè bollente e l’atmosfera dell’autunno – che per me dura tutto l’anno –
+        cerco storie capaci di portarmi altrove.
+      </p>
+      <hr class="hero-divider">
+      <div class="hero-logo">
+        <img src="img/Logo_blog2.png" alt="Pagine d'Ambra Logo" class="hero-logo-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SEARCH & FILTER ===== -->
+  <section class="search-section" id="libri">
+    <div class="container">
+      <div class="search-wrapper">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" class="search-input"
+          placeholder="Cerca un libro per titolo, autore o genere..." autocomplete="off">
+      </div>
+      <div class="filter-chips">
+        <!-- ISTRUZIONI: Aggiungi nuovi generi qui quando necessario -->
+        <span class="chip active" data-genre="tutti">Tutti</span>
+        <span class="chip" data-genre="narrativa">Narrativa</span>
+        <span class="chip" data-genre="fantasy">Fantasy</span>
+        <span class="chip" data-genre="thriller">Thriller</span>
+        <span class="chip" data-genre="saggistica">Saggistica</span>
+        <span class="chip" data-genre="sci-fi">Sci-Fi</span>
+        <span class="chip" data-genre="romance">Romance</span>
+        <span class="chip" data-genre="storico">Storico</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BOOKS GRID ===== -->
+  <section class="books-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>📚 Le Mie Recensioni</h2>
+        <span class="book-count">3 libri</span>
+      </div>
+
+      <div class="books-grid">
+
+        <!-- ============================================================
+             BOOK CARD — ESEMPIO 1 (Narrativa)
+             Per aggiungere un nuovo libro:
+             1. Copia questo blocco <a class="book-card">...</a>
+             2. Aggiorna data-title, data-author, data-genre
+             3. Aggiorna immagine, titolo, autore, genere, stelle
+             4. Aggiorna il link href alla pagina di recensione
+             ============================================================ -->
+        <a class="book-card" data-title="Kiss me - fino al prossimo capitolo" data-author="Elisa Crescenzi"
+          data-genre="Romance" href="recensioni/KissMe.html">
+          <div class="book-card-cover">
+            <img src="img/covers/KissMe.jpg" alt="Copertina: Kiss me">
+            <div class="book-card-overlay">
+              <span class="read-more-btn">Leggi Recensione →</span>
+            </div>
+          </div>
+          <div class="book-card-info">
+            <span class="book-card-genre genre-romance">Romance</span>
+            <h3 class="book-card-title">Kiss me - fino al prossimo capitolo</h3>
+            <p class="book-card-author">Elisa Crescenzi</p>
+            <div class="book-card-rating">
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- BOOK CARD — ESEMPIO 2 (Fantasy) -->
+        <a class="book-card" data-title="The Book of Azrael" data-author="Amber Nicole" data-genre="fantasy"
+          href="recensioni/Azrael.html">
+          <div class="book-card-cover">
+            <img src="img/covers/Azrael.jpg" alt="Copertina: The Book of Azrael">
+            <div class="book-card-overlay">
+              <span class="read-more-btn">Leggi Recensione →</span>
+            </div>
+          </div>
+          <div class="book-card-info">
+            <span class="book-card-genre genre-fantasy">Fantasy</span>
+            <h3 class="book-card-title">The Book of Azrael</h3>
+            <p class="book-card-author">Amber Nicole</p>
+            <div class="book-card-rating">
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- BOOK CARD — ESEMPIO 3 (Thriller) -->
+        <a class="book-card" data-title="La Ragazza del Treno" data-author="Paula Hawkins" data-genre="thriller"
+          href="recensioni/la-ragazza-del-treno.html">
+          <div class="book-card-cover">
+            <img src="img/covers/template.png" alt="Copertina: La Ragazza del Treno">
+            <div class="book-card-overlay">
+              <span class="read-more-btn">Leggi Recensione →</span>
+            </div>
+          </div>
+          <div class="book-card-info">
+            <span class="book-card-genre genre-thriller">Thriller</span>
+            <h3 class="book-card-title">La Ragazza del Treno</h3>
+            <p class="book-card-author">Paula Hawkins</p>
+            <div class="book-card-rating">
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star">★</span>
+            </div>
+          </div>
+        </a>
+
+      </div><!-- /books-grid -->
+
+      <!-- No Results -->
+      <div class="no-results">
+        <div class="no-results-icon">📭</div>
+        <p>Nessun libro trovato. Prova con un altro titolo!</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER / CONTATTI ===== -->
+  <footer class="footer" id="contatti">
+    <div class="container">
+      <div class="footer-content">
+
+        <div class="footer-about">
+          <h3>🍂 Pagine d'Ambra</h3>
+          <p>
+            <strong>Cosa troverete qui?</strong> Questo spazio è il mio rifugio letterario, un luogo dove condivido opinioni sincere e
+            appassionate. Leggo un po’ di tutto, ma il mio cuore batte più forte per i Romance e tutte quelle storie che
+            sanno scavare nel profondo.
+          </p>
+          <p>
+            Non sono qui per fare critica accademica, ma per raccontarvi le emozioni che restano incastrate tra le
+            pagine. Se cercate un consiglio di lettura onesto o un posto tranquillo dove rifugiarvi dal caos quotidiano,
+            siete nel posto giusto.
+          </p>
+          <p style="font-style: italic; color: var(--accent-gold);">
+            Buona lettura,<br>La Redazione di Pagine d’Ambra
+          </p>
+          <p style="margin-top: 0.8rem; padding-top: 0.8rem; border-top: 1px solid var(--border-subtle);">
+            <strong>Collaborazioni &amp; Contatti</strong><br>
+            Sono disponibile a recensire libri cartacei o digitali (eARC) di genere Romance, e Fantasy.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigazione</h4>
+          <ul>
+            <li><a href="#libri">📚 Libri</a></li>
+            <li><a href="#">🔝 Torna su</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h4>Contatti</h4>
+          <div class="social-links">
+            <!-- ISTRUZIONI: Sostituisci i link e i testi con i tuoi veri profili -->
+            <a href="https://www.instagram.com/paginedambra_blog?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank" rel="noopener" class="social-link">
+              <span class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg></span>
+              <span>Instagram</span>
+            </a>
+            <a href="mailto:paginedambra.blog@gmail.com" class="social-link">
+              <span class="social-icon">✉️</span>
+              <span>E-mail</span>
+            </a>
+            <a href="https://goodreads.com/tuo_profilo" target="_blank" rel="noopener" class="social-link">
+              <span class="social-icon">📖</span>
+              <span>Goodreads</span>
+            </a>
+            <a href="https://paginedambra.wordpress.com/" target="_blank" rel="noopener" class="social-link">
+              <span class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                  viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.508 14.59L7.36 8.492c.584-.028 1.11-.084 1.11-.084.522-.056.46-.834-.062-.806 0 0-1.57.124-2.584.124-.181 0-.395-.005-.624-.014A8.002 8.002 0 0 1 12 4c2.095 0 4.002.81 5.432 2.131-.035-.002-.069-.008-.105-.008-.778 0-1.33.678-1.33 1.406 0 .652.378 1.204.778 1.857.3.524.652 1.197.652 2.168 0 .673-.258 1.455-.602 2.544l-.79 2.637-2.86-8.508c.584-.028 1.11-.084 1.11-.084.523-.056.46-.834-.06-.806 0 0-1.571.124-2.586.124-.18 0-.393-.004-.62-.013l.007.02zm1.5 .42l2.396-6.96c.447-1.118.594-2.013.594-2.81 0-.288-.019-.556-.054-.801A7.997 7.997 0 0 1 20 12c0 2.689-1.332 5.065-3.371 6.516l-2.637-7.506zm5.624-6.418c.635 0 1.37-.392 1.37-1.205 0-.151-.017-.31-.047-.473A8.012 8.012 0 0 1 20 12c0 3.075-1.727 5.74-4.26 7.088l3.376-9.496z" />
+                </svg></span>
+              <span>WordPress</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="currentYear"></span> Pagine d'Ambra · Fatto con <span class="heart">♥</span> e buone letture</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" aria-label="Torna su">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

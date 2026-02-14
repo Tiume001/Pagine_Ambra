@@ -1,0 +1,222 @@
+<!--
+  ╔═══════════════════════════════════════════════════════════════╗
+  ║              📖 TEMPLATE RECENSIONE — FAC-SIMILE             ║
+  ╠═══════════════════════════════════════════════════════════════╣
+  ║                                                               ║
+  ║  COME USARE QUESTO TEMPLATE:                                  ║
+  ║                                                               ║
+  ║  1. Copia questo file e rinominalo con il titolo del libro    ║
+  ║     (es: "il-nome-della-rosa.html")                           ║
+  ║                                                               ║
+  ║  2. Sostituisci tutti i campi contrassegnati con              ║
+  ║     [DA MODIFICARE] con i dati del tuo libro                  ║
+  ║                                                               ║
+  ║  3. Aggiungi l'immagine della copertina nella cartella        ║
+  ║     img/covers/ e aggiorna il percorso dell'immagine          ║
+  ║                                                               ║
+  ║  4. Aggiungi una nuova card nella griglia di index.html       ║
+  ║     (copia un blocco <a class="book-card"> e aggiornalo)      ║
+  ║                                                               ║
+  ║  5. Aggiorna le stelle (★) per la tua valutazione:            ║
+  ║     - class="star filled" = stella piena (colorata)           ║
+  ║     - class="star" = stella vuota                             ║
+  ║                                                               ║
+  ╚═══════════════════════════════════════════════════════════════╝
+-->
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- [DA MODIFICARE] Aggiorna con il titolo del libro -->
+    <meta name="description"
+        content="Recensione del libro: Titolo del Libro di Nome Autore. Scopri la mia opinione e valutazione.">
+    <title>Titolo del Libro — Pagine d'Ambra</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../img/Logo_blog.jpg" alt="Logo" class="logo-img">
+                <span class="logo-icon">🍂</span>
+                <span>Pagine d'Ambra</span>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html#libri">Libri</a></li>
+                    <li><a href="../index.html#contatti">Contatti</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="nav-overlay"></div>
+
+    <!-- ===== REVIEW CONTENT ===== -->
+    <main class="review-page">
+        <div class="container">
+
+            <!-- Back Button -->
+            <a href="../index.html" class="review-back">← Torna alla Home</a>
+
+            <div class="review-layout">
+
+                <!-- Cover Image -->
+                <div class="review-cover">
+                    <!-- [DA MODIFICARE] Sostituisci con il percorso della copertina del libro -->
+                    <img src="../img/covers/template.png" alt="Copertina: Titolo del Libro">
+                </div>
+
+                <!-- Review Details -->
+                <div class="review-content">
+
+                    <!-- [DA MODIFICARE] Genere — Scegli la classe CSS giusta:
+               genre-narrativa, genre-fantasy, genre-thriller,
+               genre-saggistica, genre-sci-fi, genre-romanzo,
+               genre-horror, genre-storico, genre-default -->
+                    <span class="review-genre genre-narrativa">Narrativa</span>
+
+                    <!-- [DA MODIFICARE] Titolo del libro -->
+                    <h1 class="review-title">Titolo del Libro</h1>
+
+                    <!-- [DA MODIFICARE] Nome dell'autore -->
+                    <p class="review-author">di <strong>Nome Autore</strong></p>
+
+                    <!-- Rating -->
+                    <div class="review-rating">
+                        <!-- [DA MODIFICARE] Stelle della valutazione:
+                 Usa class="star filled" per stelle PIENE
+                 Usa class="star" per stelle VUOTE
+                 Esempio 4/5: ★★★★☆ -->
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star">★</span>
+                        <span class="rating-text">4 / 5</span>
+                    </div>
+
+                    <!-- Metadata -->
+                    <div class="review-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Genere</span>
+                            <!-- [DA MODIFICARE] -->
+                            <span class="meta-value">Narrativa</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Pagine</span>
+                            <!-- [DA MODIFICARE] -->
+                            <span class="meta-value">320</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Anno Pubblicazione</span>
+                            <!-- [DA MODIFICARE] -->
+                            <span class="meta-value">2020</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Editore</span>
+                            <!-- [DA MODIFICARE] -->
+                            <span class="meta-value">Nome Editore</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Data Lettura</span>
+                            <!-- [DA MODIFICARE] -->
+                            <span class="meta-value">Febbraio 2026</span>
+                        </div>
+                    </div>
+
+                    <!-- Review Body -->
+                    <div class="review-body">
+
+                        <!-- [DA MODIFICARE] Scrivi qui la tua recensione.
+                 Puoi usare <h3> per i sottotitoli,
+                 <p> per i paragrafi, e
+                 <blockquote> per le citazioni dal libro. -->
+
+                        <h3>La Mia Opinione</h3>
+                        <p>
+                            Scrivi qui le tue impressioni generali sul libro. Cosa ti ha colpito?
+                            Cosa ti è piaciuto di più? Questo è lo spazio per la tua opinione personale,
+                            libera e sincera.
+                        </p>
+
+                        <h3>La Trama (Senza Spoiler)</h3>
+                        <p>
+                            Descrivi brevemente la trama senza fare spoiler. Dai al lettore un'idea
+                            di cosa tratta il libro per incuriosirlo. Usa un tono che invogli alla lettura.
+                        </p>
+
+                        <blockquote>
+                            "Inserisci qui una citazione memorabile dal libro che ti ha colpito particolarmente."
+                        </blockquote>
+
+                        <h3>Personaggi</h3>
+                        <p>
+                            Parla dei personaggi principali. Sono ben costruiti? Ti ci sei immedesimato?
+                            Quali sono i tuoi preferiti e perché?
+                        </p>
+
+                        <h3>Stile di Scrittura</h3>
+                        <p>
+                            Commenta lo stile dell'autore. È scorrevole? Poetico? Diretto? Come
+                            ti ha fatto sentire durante la lettura?
+                        </p>
+
+                        <h3>A Chi Lo Consiglio</h3>
+                        <p>
+                            Per chi è adatto questo libro? Consiglialo a un tipo di lettore specifico.
+                            Ad esempio: "Consigliato a chi ama i gialli storici e le atmosfere medievali."
+                        </p>
+
+                    </div>
+
+                    <!-- A Colpo d'Occhio -->
+                    <!-- [DA MODIFICARE] Aggiorna i valori per ogni categoria -->
+                    <div class="colpo-docchio">
+                        <h3>🔥 A colpo d'occhio</h3>
+                        <ul class="colpo-list">
+                            <li><span class="colpo-emoji">☕</span> <strong>Atmosfera:</strong> Piccola città,
+                                accogliente, invernale.</li>
+                            <li><span class="colpo-emoji">🔥</span> <strong>Chimica:</strong> Odio-Amore (Slow Burn).
+                            </li>
+                            <li><span class="colpo-emoji">🌶️</span> <strong>Spicy:</strong> 2/5 (C'è passione ma non è
+                                volgare).</li>
+                            <li><span class="colpo-emoji">😮‍💨</span> <strong>Emozione:</strong> Prepara i fazzoletti!
+                            </li>
+                            <li><span class="colpo-emoji">🎃</span> <strong>Vibe:</strong> Gilmore Girls vibes,
+                                cioccolata calda, seconde occasioni.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© <span id="currentYear"></span> Pagine d'Ambra · <a href="../index.html">Torna alla
+                        Home</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" aria-label="Torna su">↑</button>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
